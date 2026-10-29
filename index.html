@@ -5,6 +5,11 @@
         h1 {
             font-size: 40px;
         }
+
+        pre {
+            background-color: #eee;
+            padding: 10px;
+        }
     </style>
 </head>
 
@@ -13,9 +18,80 @@
     <p>Today, we are going to build a website using HTML and a little bit of CSS.</p>
     <p>This is an example of a very simple webpaget that you'll be able to build at the end of this workshop.</p>
     <p>Yes it is shitty. Shut up. We will learn a new time of web design next meeting that is much prettier.</p>
-    <p>So this is HTML. And I hate HTML, so I'm not writing a guide for it.</p>
     <p>This is the link you'll follow to do this:
         https://www.canva.com/design/DAGr1zQLfE4/eqe5sSP6hE9-4SZez72QFA/view?utlId=h25bb5bce98#1</p>
+
+    <h2>HTML Survival Guide</h2>
+    <p>HTML is the stuff on the page. Everything is a tag. Most tags come in pairs: an opening tag and a closing tag
+        with a slash.</p>
+    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+
+    <p>Every page starts with this skeleton:</p>
+    <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        /* your CSS goes here */
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- the stuff people see goes here --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+    <p>The tags you actually need:</p>
+    <pre><code>&lt;h1&gt;Big title&lt;/h1&gt;          (h1 is biggest, h6 is smallest)
+&lt;p&gt;A paragraph&lt;/p&gt;
+&lt;a href="https://google.com"&gt;A link&lt;/a&gt;
+&lt;img src="cat.jpg" alt="a cat"&gt;   (no closing tag)
+&lt;br&gt;                         (line break, no closing tag)
+&lt;b&gt;bold&lt;/b&gt; &lt;i&gt;italic&lt;/i&gt;
+
+&lt;ul&gt;                         (bullet list)
+    &lt;li&gt;thing one&lt;/li&gt;
+    &lt;li&gt;thing two&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div&gt;a box to group stuff in&lt;/div&gt;
+&lt;!-- a comment, the browser ignores this --&gt;</code></pre>
+
+    <h2>CSS Survival Guide</h2>
+    <p>CSS makes the stuff look different. It goes inside the <code>&lt;style&gt;</code> tag. Pick a tag, then
+        say what to change:</p>
+    <pre><code>p {
+    color: blue;
+    font-size: 20px;
+}</code></pre>
+    <p>That means "make every paragraph blue and 20 pixels tall." Don't forget the colon and semicolon.</p>
+
+    <p>Want to style just one thing? Give it a class, then use a dot in CSS:</p>
+    <pre><code>&lt;p class="spicy"&gt;Only this one is red.&lt;/p&gt;
+
+.spicy {
+    color: red;
+}</code></pre>
+
+    <p>The properties you actually need:</p>
+    <pre><code>color: red;                  (text color)
+background-color: yellow;    (background color)
+font-size: 24px;             (text size)
+font-family: Arial;          (font)
+text-align: center;          (left, center, right)
+width: 300px;                (how wide)
+padding: 10px;               (space inside the box)
+margin: 10px;                (space outside the box)
+border: 2px solid black;     (outline)</code></pre>
+    <p>Colors can be names (<code>red</code>, <code>tomato</code>) or hex codes (<code>#ff0000</code>).</p>
+
+    <h2>When It Breaks</h2>
+    <ul>
+        <li>Did you save the file? Did you refresh the browser?</li>
+        <li>Did you close every tag?</li>
+        <li>Did you forget a semicolon or a curly brace in your CSS?</li>
+        <li>Is your spelling right? <code>colour</code> does not work. It's <code>color</code>.</li>
+    </ul>
+
+    <h1>Fun Fact: AI is really good at coding. Ask it for help, not me. If you need some "hints" on getting unblocked
+        AI, LMK.</h1>
 
 </body>
 
